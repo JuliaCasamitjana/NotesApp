@@ -7,19 +7,21 @@ import getVisibleBlogs from '../selectors/blogs';;
 
 
 const BlogList = (props)=>(
-	<div>
-		<Link to="/create">Add Blog</Link>
-		{
-		props.blogs.length === 0 ? (
-			<div>
-				<span>No blogs</span>
-			</div>
-		) : (
-		props.blogs.map((b) => {
-		return <BlogItem key={b.id} {...b}/>;
-		})
-		)
-	}
+	<div className='content-container'>
+		<div className='blogList'>
+			<Link className='button' to="/create">Add Note</Link>
+			{
+			props.blogs.length === 0 ? (
+				<div>
+					<span>No notes</span>
+				</div>
+			) : (
+			props.blogs.map((b) => {
+			return <BlogItem key={b.id} {...b}/>;
+			})
+			)
+		}
+		</div>
 	</div>
 );
 

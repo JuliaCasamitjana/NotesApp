@@ -12,7 +12,7 @@ export const addBlog = (
 		blog:{
 			title, 
 			content,
-			createdAt: moment().format('DMMMYYYY, h:mm'),
+			createdAt: moment().format('D MMM YYYY, h:mm'),
 			id: uuid()
 		}
 });

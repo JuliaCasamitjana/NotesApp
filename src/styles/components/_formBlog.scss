@@ -1,0 +1,18 @@
+.formBlog{
+display: flex;
+flex-direction: column;
+margin:$l-size auto;
+}
+
+.formBlog__title{
+	font-size: 3rem;
+	margin:0.1rem auto $s-size auto;
+	width: 100%;
+	padding: $s-size;
+}
+
+.formBlog__content{
+	height: 60rem;
+	line-height: 3rem;
+	padding: $s-size;
+}

@@ -10,7 +10,7 @@ return blogs.filter((b) => {
 		return (titleA < titleB) ? -1 : (titleA > titleB) ? 1 : 0;
 	} else if (sortBy === 'Date'){
 
-		return (a.createdAt < b.createdAt) ? -1 : (a.createdAt > b.createdAt) ? 1 : 0;
+		return (a.createdAt > b.createdAt) ? -1 : (a.createdAt < b.createdAt) ? 1 : 0;
 	}
 })
 };

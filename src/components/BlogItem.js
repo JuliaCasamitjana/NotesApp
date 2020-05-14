@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 
 const BlogItem =  ({title, createdAt, id}) =>(
-	<div>
+	<div className='blogList__item'>
 	<Link to = {{pathname: `/${id}`}}>
-		{title} - 
-		{createdAt}
+		<h2 className= 'blogList__title'>{title}</h2>  
+		<p className= 'blogList__date'>{createdAt}</p>
 	</Link>
 
 	</div>

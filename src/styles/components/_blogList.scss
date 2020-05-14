@@ -1,0 +1,42 @@
+.blogList{
+display: flex;
+flex-direction: column;
+
+}
+
+.blogList__item{
+padding: 0 1rem;
+margin:0.3rem 0;
+height: 6rem;
+background-color: $dark;
+&:hover {
+		background-color: $orange;
+		color:$dark;
+	}
+}
+
+.blogList__title{
+	margin: 0.4rem;
+	font-size:$m-size;
+	color:white;
+	transition: 0.2s;
+}
+
+.blogList__date{
+	margin: 0.2rem;
+	font-size: $s-size;
+	color: lighten($dark, 20%);
+	transition: 0.2s;
+
+}
+
+.blogList__item:hover h2{
+	font-size: 2.5rem;
+	padding-left: 3rem;
+	}
+
+.blogList__item:hover p{
+	display: none;
+	}
+
+

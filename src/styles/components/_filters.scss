@@ -1,0 +1,21 @@
+.filters{
+	padding-top: $m-size;
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 0.3rem;
+
+	@media(min-width: $desktop-breakpoint){
+	justify-content: flex-end;
+	}
+}
+
+
+.filters__boxes{
+
+	background-color: transparent;
+	color: $dark;
+	border: 2px solid $dark;
+	border-radius:2px;
+	height: $l-size;
+	margin-right: 0.5rem;
+}

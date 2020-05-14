@@ -13,17 +13,17 @@ const BlogPage = (props) =>{
 	};
 	
 	return (
-	<div>
-		{props.blog.title} -
-		{props.blog.createdAt} -
-		{props.blog.content}
+	<div className = 'content-container'>
+		<h1>{props.blog.title}</h1>
+		<p className= 'blogPage__date'>{props.blog.createdAt}</p>
+		<p className= 'blogPage__content'>{props.blog.content}</p>
 
-	<button onClick = {onRemove}>
-			Remove
-	</button>
-	<Link to = {{pathname: `edit/${props.blog.id}`}}>
-		Edit
-	</Link>
+		<button className='button button--remove' onClick = {onRemove}>
+				Remove
+		</button>
+		<Link className='button button--edit' to = {{pathname: `edit/${props.blog.id}`}}>
+			Edit
+		</Link>
 
 	</div>
 	);

@@ -31,14 +31,14 @@ class BlogAdd extends React.Component{
 	}  
 	render(){
 		return(
-		<form onSubmit = {this.onSubmit} >
+		<form className = 'content-container formBlog' onSubmit = {this.onSubmit} >
 			<label htmlFor="title">Title</label>
-			<input type="text" name="title" value={this.state.title } onChange= {this.onChangeTitle}/>
+			<input className='formBlog__title' type="text" name="title" value={this.state.title } onChange= {this.onChangeTitle}/>
 
-			<textarea type="text" name="content" value= {this.state.content} onChange= {this.onChangeContent}>
+			<textarea className='formBlog__content' type="text" name="content" value= {this.state.content} onChange= {this.onChangeContent}>
 			</textarea>
 
-			<button>Save Blog</button>
+			<button className= 'button'>Save Note</button>
 		</form>
 		);
 	}

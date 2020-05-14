@@ -24,19 +24,20 @@ class BlogEdit extends React.Component{
 		e.preventDefault();
 		const id = this.props.blog.id;
 		this.props.editBlog(id, this.state); 
-		this.props.history.push('/');
+		this.props.history.push({pathname: `/${this.props.blog.id}`});
 
 	}  
 	render(){
 		return(
-		<form onSubmit = {this.onSubmit} >
+		<form className = 'content-container formBlog' onSubmit = {this.onSubmit} >
 			<label htmlFor="title">Title</label>
-			<input type="text" name="title" value={this.state.title } onChange= {this.onChangeTitle}/>
+			<input className='formBlog__title' type="text" name="title" value={this.state.title } onChange= {this.onChangeTitle}/>
 
-			<textarea type="text" name="content" value= {this.state.content} onChange= {this.onChangeContent}>
+			<textarea className='formBlog__content' type="text" name="content" value= {this.state.content} onChange= {this.onChangeContent}>
 			</textarea>
 
-			<button>Save Changes</button>
+			<button className='button button--save'>Save Changes</button>
+
 		</form>
 		);
 	}

@@ -1,0 +1,11 @@
+.blogPage{
+	margin: $m-size;
+}
+
+.blogPage__date{
+	color: lighten($dark, 20%);
+}
+
+.blogPage__content{
+	line-height: 3rem;
+}

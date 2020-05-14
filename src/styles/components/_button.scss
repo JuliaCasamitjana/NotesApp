@@ -1,0 +1,29 @@
+.button{
+
+	width: 10rem;
+	line-height: 2rem;
+	text-align: center;
+	color: $dark;
+	padding:0.5rem;
+	border: 2px solid $dark;
+	border-radius: 3px;
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	background-color: transparent;
+	&:hover{
+		background-color: $dark;
+		color: $light;
+		border-color: $dark;
+
+	}
+
+}
+
+.button--remove{
+background-color: $dark;
+color: $light;
+&:hover{
+		background-color: $orange;
+		color: $dark;
+}
+}
+

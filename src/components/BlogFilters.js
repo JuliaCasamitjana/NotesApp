@@ -18,9 +18,9 @@ class BlogFilters extends React.Component{
 
 	render(){
 		return (
-			<form>
-				<input onChange = {this.textOnChange}/> 
-				<select onChange = {this.selectOnChange}>
+			<form className='content-container filters'>
+				<input className='filters__boxes' onChange = {this.textOnChange}/> 
+				<select className='filters__boxes' onChange = {this.selectOnChange}>
 					<option>Date</option>
 					<option>Title</option>
 				</select>
